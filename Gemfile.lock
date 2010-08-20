@@ -1,3 +1,19 @@
+GIT
+  remote: git://github.com/locksmithdon/calendar_date_select.git
+  revision: 6d43824
+  branch: jqueryrails3
+  specs:
+    calendar_date_select (1.16.1)
+
+GIT
+  remote: http://github.com/kalv/webrat.git
+  revision: 66130e4
+  specs:
+    webrat (0.7.2.pre)
+      nokogiri (>= 1.2.0)
+      rack (>= 1.0)
+      rack-test (>= 0.5.3)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -32,20 +48,50 @@ GEM
       activesupport (>= 3.0.0.beta)
     bcrypt-ruby (2.1.2)
     builder (2.1.2)
+    capybara (0.3.9)
+      culerity (>= 0.2.4)
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      selenium-webdriver (>= 0.0.3)
+    columnize (0.3.1)
+    configuration (1.1.0)
+    cucumber (0.8.5)
+      builder (~> 2.1.2)
+      diff-lcs (~> 1.1.2)
+      gherkin (~> 2.1.4)
+      json_pure (~> 1.4.3)
+      term-ansicolor (~> 1.0.4)
+    cucumber-rails (0.3.2)
+      cucumber (>= 0.8.0)
+    culerity (0.2.10)
+    database_cleaner (0.5.2)
     devise (1.1.1)
       bcrypt-ruby (~> 2.1.2)
       warden (~> 0.10.7)
+    diff-lcs (1.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    ffi (0.6.3)
+      rake (>= 0.8.7)
+    gherkin (2.1.5)
+      trollop (~> 1.16.2)
     i18n (0.4.1)
+    json_pure (1.4.6)
+    launchy (0.3.7)
+      configuration (>= 0.0.5)
+      rake (>= 0.8.1)
+    linecache (0.43)
     mail (2.2.5)
       activesupport (>= 2.3.6)
       mime-types
       treetop (>= 1.4.5)
     mime-types (1.16)
+    nokogiri (1.4.3.1)
     polyglot (0.3.1)
     rack (1.2.1)
-    rack-mount (0.6.9)
+    rack-mount (0.6.10)
       rack (>= 1.0.0)
     rack-test (0.5.4)
       rack (>= 1.0)
@@ -63,10 +109,34 @@ GEM
       rake (>= 0.8.3)
       thor (~> 0.14.0)
     rake (0.8.7)
+    rspec (2.0.0.beta.19)
+      rspec-core (= 2.0.0.beta.19)
+      rspec-expectations (= 2.0.0.beta.19)
+      rspec-mocks (= 2.0.0.beta.19)
+    rspec-core (2.0.0.beta.19)
+    rspec-expectations (2.0.0.beta.19)
+      diff-lcs (>= 1.1.2)
+    rspec-mocks (2.0.0.beta.19)
+    rspec-rails (2.0.0.beta.19)
+      rspec (= 2.0.0.beta.19)
+      webrat (>= 0.7.2.beta.1)
+    ruby-debug (0.10.3)
+      columnize (>= 0.1)
+      ruby-debug-base (~> 0.10.3.0)
+    ruby-debug-base (0.10.3)
+      linecache (>= 0.3)
+    rubyzip (0.9.4)
+    selenium-webdriver (0.0.27)
+      ffi (>= 0.6.1)
+      json_pure
+      rubyzip
+    spork (0.8.4)
     sqlite3-ruby (1.3.1)
+    term-ansicolor (1.0.5)
     thor (0.14.0)
     treetop (1.4.8)
       polyglot (>= 0.3.1)
+    trollop (1.16.2)
     tzinfo (0.3.22)
     warden (0.10.7)
       rack (>= 1.0.0)
@@ -75,6 +145,15 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  calendar_date_select (= 1.16.1)!
+  capybara
+  cucumber-rails (>= 0.3.2)
+  database_cleaner
   devise (= 1.1.1)
+  launchy
   rails (= 3.0.0.rc)
+  rspec-rails (>= 2.0.0.beta.19)
+  ruby-debug
+  spork
   sqlite3-ruby
+  webrat (>= 0.7.2.pre)!

@@ -1,0 +1,1 @@
+rvm --create use mri8@lemmego > /dev/null

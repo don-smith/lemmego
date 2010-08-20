@@ -1,0 +1,37 @@
+# Logfile created on Thu Aug 19 15:31:34 -0700 2010 by logger.rb/22285
+REQUESTING PAGE: GET /events/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /events with {"commit"=>"Create Event", "_snowman"=>"☃", "event"=>{"name"=>"DevCon 2010", "location"=>"", "end_time"=>"", "cost"=>"", "description"=>"", "start_time"=>""}} and HTTP headers {"HTTP_REFERER"=>"/events/new"}
+REQUESTING PAGE: GET /events/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /events with {"commit"=>"Create Event", "_snowman"=>"☃", "event"=>{"name"=>"DevCon 2010", "location"=>"City Center", "end_time"=>"", "cost"=>"", "description"=>"", "start_time"=>"August 23, 2010 9:00 AM"}} and HTTP headers {"HTTP_REFERER"=>"/events/new"}
+REQUESTING PAGE: GET /events/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /events with {"commit"=>"Create Event", "_snowman"=>"☃", "event"=>{"name"=>"DevCon 2010", "location"=>"City Center", "end_time"=>"", "cost"=>"", "description"=>"", "start_time"=>"August 23, 2010 9:00 AM"}} and HTTP headers {"HTTP_REFERER"=>"/events/new"}
+REQUESTING PAGE: GET /events/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /events with {"commit"=>"Create Event", "_snowman"=>"☃", "event"=>{"name"=>"DevCon 2010", "location"=>"City Center", "end_time"=>"", "cost"=>"", "description"=>"", "start_time"=>"August 23, 2010 9:00 AM"}} and HTTP headers {"HTTP_REFERER"=>"/events/new"}
+REQUESTING PAGE: GET /events/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /events with {"commit"=>"Create Event", "_snowman"=>"☃", "event"=>{"name"=>"DevCon 2010", "location"=>"City Center", "end_time"=>"", "cost"=>"", "description"=>"", "start_time"=>"August 23, 2010 9:00 AM"}} and HTTP headers {"HTTP_REFERER"=>"/events/new"}
+REQUESTING PAGE: GET /events/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /events with {"commit"=>"Create Event", "_snowman"=>"☃", "event"=>{"name"=>"DevCon 2010", "location"=>"City Center", "end_time"=>"", "cost"=>"", "description"=>"", "start_time"=>"August 23, 2010 9:00 AM"}} and HTTP headers {"HTTP_REFERER"=>"/events/new"}
+REQUESTING PAGE: GET /events/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /events with {"commit"=>"Create Event", "_snowman"=>"☃", "event"=>{"name"=>"DevCon 2010", "location"=>"City Center", "end_time"=>"", "cost"=>"", "description"=>"", "start_time"=>"August 23, 2010 9:00 AM"}} and HTTP headers {"HTTP_REFERER"=>"/events/new"}
+REQUESTING PAGE: GET /events/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /events with {"commit"=>"Create Event", "_snowman"=>"☃", "event"=>{"name"=>"DevCon 2010", "location"=>"City Center", "end_time"=>"", "cost"=>"", "description"=>"", "start_time"=>"August 23, 2010 9:00 AM"}} and HTTP headers {"HTTP_REFERER"=>"/events/new"}
+REQUESTING PAGE: GET /events/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /events with {"commit"=>"Create Event", "_snowman"=>"☃", "event"=>{"name"=>"DevCon 2010", "location"=>"City Center", "end_time"=>"", "cost"=>"", "description"=>"", "start_time"=>"August 23, 2010 9:00 AM"}} and HTTP headers {"HTTP_REFERER"=>"/events/new"}
+REQUESTING PAGE: GET /events/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /events with {"commit"=>"Create Event", "_snowman"=>"☃", "event"=>{"name"=>"DevCon 2010", "location"=>"City Center", "end_time"=>"", "cost"=>"", "description"=>"", "start_time"=>"August 23, 2010 9:00 AM"}} and HTTP headers {"HTTP_REFERER"=>"/events/new"}
+REQUESTING PAGE: GET /events/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /events with {"commit"=>"Create Event", "_snowman"=>"☃", "event"=>{"name"=>"DevCon 2010", "location"=>"City Center", "end_time"=>"", "cost"=>"", "description"=>"", "start_time"=>"August 23, 2010 9:00 AM"}} and HTTP headers {"HTTP_REFERER"=>"/events/new"}
+REQUESTING PAGE: GET /events/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /events with {"commit"=>"Create Event", "_snowman"=>"☃", "event"=>{"name"=>"DevCon 2010", "location"=>"City Center", "end_time"=>"", "cost"=>"", "description"=>"", "start_time"=>"August 23, 2010 9:00 AM"}} and HTTP headers {"HTTP_REFERER"=>"/events/new"}
+REQUESTING PAGE: GET /events/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /events with {"commit"=>"Create Event", "_snowman"=>"☃", "event"=>{"name"=>"DevCon 2010", "location"=>"City Center", "end_time"=>"", "cost"=>"", "description"=>"", "start_time"=>"August 23, 2010 9:00 AM"}} and HTTP headers {"HTTP_REFERER"=>"/events/new"}
+REQUESTING PAGE: GET /events/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /events with {"commit"=>"Create Event", "_snowman"=>"☃", "event"=>{"name"=>"DevCon 2010", "location"=>"City Center", "end_time"=>"", "cost"=>"", "description"=>"", "start_time"=>"August 23, 2010 9:00 AM"}} and HTTP headers {"HTTP_REFERER"=>"/events/new"}
+REQUESTING PAGE: GET /events/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /events with {"commit"=>"Create Event", "_snowman"=>"☃", "event"=>{"name"=>"DevCon 2010", "location"=>"City Center", "end_time"=>"", "cost"=>"", "description"=>"", "start_time"=>"August 23, 2010 9:00 AM"}} and HTTP headers {"HTTP_REFERER"=>"/events/new"}
+REQUESTING PAGE: GET /events/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /events with {"commit"=>"Create Event", "_snowman"=>"☃", "event"=>{"name"=>"DevCon 2010", "location"=>"City Center", "end_time"=>"", "cost"=>"", "description"=>"", "start_time"=>"August 23, 2010 9:00 AM"}} and HTTP headers {"HTTP_REFERER"=>"/events/new"}
+REQUESTING PAGE: GET /events/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /events with {"commit"=>"Create Event", "_snowman"=>"☃", "event"=>{"name"=>"DevCon 2010", "location"=>"City Center", "end_time"=>"", "cost"=>"", "description"=>"", "start_time"=>"August 23, 2010 9:00 AM"}} and HTTP headers {"HTTP_REFERER"=>"/events/new"}
+REQUESTING PAGE: GET /events/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /events with {"commit"=>"Create Event", "_snowman"=>"☃", "event"=>{"name"=>"DevCon 2010", "location"=>"City Center", "end_time"=>"", "cost"=>"", "description"=>"", "start_time"=>"August 23, 2010 9:00 AM"}} and HTTP headers {"HTTP_REFERER"=>"/events/new"}
