@@ -1,32 +1,12 @@
-<h1>Listing events</h1>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th>Start time</th>
-    <th>End time</th>
-    <th>Location</th>
-    <th>Cost</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<h1>Recently added events</h1>
 
 <% @events.each do |event| %>
-  <tr>
-    <td><%= event.name %></td>
-    <td><%= event.description %></td>
-    <td><%= event.start_time %></td>
-    <td><%= event.end_time %></td>
-    <td><%= event.location %></td>
-    <td><%= event.cost %></td>
-    <td><%= link_to 'Show', event %></td>
-    <td><%= link_to 'Edit', edit_event_path(event) %></td>
-    <td><%= link_to 'Destroy', event, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+  <ul>
+    <li><%= link_to event.name, event %>
+        (<%= link_to 'edit', edit_event_path(event) %> or
+        <%= link_to 'delete', event, :confirm => 'Are you sure?', :method => :delete %>)</li>
+  </ul>
 <% end %>
-</table>
 
 <br />
 

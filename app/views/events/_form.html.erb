@@ -1,8 +1,12 @@
+<%- content_for(:head) do -%>
+  <%= calendar_date_select_includes(:style => "default") %>
+  <%= javascript_include_tag calendar_date_select_javascripts %>
+<%- end -%>
+
 <%= form_for(@event) do |f| %>
   <% if @event.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@event.errors.count, "error") %> prohibited this event from being saved:</h2>
-
       <ul>
       <% @event.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
@@ -11,31 +15,37 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
+  <div style="margin-top: 40px">
+  <div style="float: left">
+	  <div class="field">
+	    <strong><%= f.label :name %></strong><br />
+	    <%= f.text_field :name %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :description %><br />
+	    <%= f.text_area :description, :rows => 9 %>
+	  </div>
   </div>
-  <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_area :description %>
+  <div style="margin-left: 340px">
+	  <div class="field">
+	    <%= f.label :cost %><br />
+	    <%= f.text_field :cost %>
+	  </div>
+	  <div class="field">
+	    <strong><%= f.label :location %></strong><br />
+	    <%= f.text_field :location %>
+	  </div>
+	  <div class="field">
+	    <strong><%= f.label :start_time %></strong><br />
+	    <%= f.calendar_date_select :start_time %>
+	  </div>
+	  <div class="field">
+	    <%= f.label :end_time %><br />
+	    <%= f.calendar_date_select :end_time %>
+	  </div>
+	  <div class="actions">
+	    <%= f.submit %>
+	  </div>
   </div>
-  <div class="field">
-    <%= f.label :start_time %><br />
-    <%= f.calendar_date_select :start_time %>
-  </div>
-  <div class="field">
-    <%= f.label :end_time %><br />
-    <%= f.calendar_date_select :end_time %>
-  </div>
-  <div class="field">
-    <%= f.label :location %><br />
-    <%= f.text_field :location %>
-  </div>
-  <div class="field">
-    <%= f.label :cost %><br />
-    <%= f.text_field :cost %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
   </div>
 <% end %>

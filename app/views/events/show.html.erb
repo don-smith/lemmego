@@ -1,35 +1,18 @@
-<p id="notice"><%= notice %></p>
+<h1 id="event_name"><%= @event.name -%></h1>
 
-<p>
-  <b>Name:</b>
-  <%= @event.name %>
-</p>
+<%= render 'menu' %>
 
-<p>
-  <b>Description:</b>
-  <%= @event.description %>
-</p>
+<div id="essentials" style="float: right">
+	<a href="register">Register</a>	
+	<ul>
+		<li><%= @event.dates %></li>
+		<li><%= @event.location %></li>
+		<li>Redmond, WA</li>
+	</ul>
+</div>
 
-<p>
-  <b>Start time:</b>
-  <%= @event.start_time %>
-</p>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
 
-<p>
-  <b>End time:</b>
-  <%= @event.end_time %>
-</p>
+<div id="event_description"><%= @event.description %></div>
 
-<p>
-  <b>Location:</b>
-  <%= @event.location %>
-</p>
-
-<p>
-  <b>Cost:</b>
-  <%= @event.cost %>
-</p>
-
-
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
