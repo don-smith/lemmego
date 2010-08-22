@@ -1,6 +1,8 @@
 <%- content_for(:head) do -%>
+  <%= javascript_include_tag "tiny_mce/tiny_mce" %>
   <%= calendar_date_select_includes(:style => "default") %>
   <%= javascript_include_tag calendar_date_select_javascripts %>
+  <%= javascript_include_tag "mce_editor" %>
 <%- end -%>
 
 <%= form_for(@event) do |f| %>
@@ -15,7 +17,7 @@
     </div>
   <% end %>
 
-  <div style="margin-top: 40px">
+  <div id="content" style="margin-top: 40px">
   <div style="float: left">
 	  <div class="field">
 	    <strong><%= f.label :name %></strong><br />
@@ -23,10 +25,10 @@
 	  </div>
 	  <div class="field">
 	    <%= f.label :description %><br />
-	    <%= f.text_area :description, :rows => 9 %>
+	    <%= f.text_area :description, :size => '40x30', :class => 'mceeditor' %>
 	  </div>
   </div>
-  <div style="margin-left: 340px">
+  <div style="margin-left: 460px">
 	  <div class="field">
 	    <%= f.label :cost %><br />
 	    <%= f.text_field :cost %>

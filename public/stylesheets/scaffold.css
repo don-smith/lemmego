@@ -2,7 +2,7 @@
 
 body, p, ol, ul, td {
   font-family: verdana, helvetica, sans-serif;
-  font-size:   14px;
+  font-size:   16px;
   line-height: 18px;
 }
 
@@ -20,9 +20,14 @@ body, p, ol, ul, td {
 
 h1 {
 	width: 50%;
-	margin-top: 50px;
+	margin-top: 30px;
 	font-size: xx-large;
 	line-height: 150%;
+}
+
+p {
+	line-height: 1.7em;
+	margin-bottom: 20px;
 }
 
 #nav_menu li {
@@ -33,10 +38,23 @@ h1 {
 
 #essentials {
 	clear: both;
+	margin-top: 30px;
+	margin-left: 100px;
+	margin-bottom: 60px;
+	text-align: right;
 }
 
 #event_description {
-	margin-top: 80px;
+	margin-top: 120px;
+}
+
+.notice, .alert {
+	float: right;
+	clear: both;
+}
+
+.field {
+	margin-bottom: 14px;
 }
 /* **** Original stylesheet ****
 body { background-color: #fff; color: #333; }

@@ -1,4 +1,9 @@
+<% title @event.name %>
+
 <h1 id="event_name"><%= @event.name -%></h1>
+
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
 
 <%= render 'menu' %>
 
@@ -11,8 +16,5 @@
 	</ul>
 </div>
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
-
-<div id="event_description"><%= @event.description %></div>
+<div id="event_description"><%=raw @event.description %></div>
 
