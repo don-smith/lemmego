@@ -1,4 +1,8 @@
 Lemmego::Application.routes.draw do
+
+  match 'profile' => 'profile#show'
+  get 'profile/edit'
+
   devise_for :users
 
   resources :events
