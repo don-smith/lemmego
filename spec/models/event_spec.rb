@@ -5,7 +5,7 @@ describe Event do
     before :all do
       @event = Event.new
     end
-    it "has a planner"
+    #it "has a planner"
     it "defaults to being free" do
       @event.cost == 0.0
     end

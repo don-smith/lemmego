@@ -14,8 +14,15 @@ module NavigationHelpers
       new_event_path
     when /the event page/
       event_path
-
-
+    when /sign up page/
+      new_user_registration_path
+    when /sign in page/
+      new_user_session_path
+    when /sign out page/
+      destroy_user_session_path
+    when /the DevCon Northwest page/
+      event_path 1 
+      
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
