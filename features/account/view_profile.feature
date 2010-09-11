@@ -3,7 +3,6 @@ Feature: User views their profile
 	I want to view my profile
 	So I can manage my activity on the site
 	
-	@wip
 	Scenario: Signed in user views profile
 		Given I am signed in as Pam
 		When I follow "pam@producer.com"

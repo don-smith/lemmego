@@ -1,22 +1,12 @@
 require 'spec_helper'
 
 describe Event do
-  context "created with minimal information" do
-    before :all do
-      @event = Event.new
-    end
-    #it "has a planner"
-    it "defaults to being free" do
-      @event.cost == 0.0
-    end
-    it "is invalid without a name" do
-      @event.errors[:name].grep(/can\'t be blank/).one?
-    end
-    it "is invalid without a location" do
-      @event.errors[:location].grep(/can\'t be blank/).one?
-    end
-    it "is invalid without a start date" do
-      @event.errors[:start_date].grep(/can\'t be blank/).one?
-    end
+  it "requires certain information to be valid" do
+    event = Event.new
+    event.cost.should == 0.0
+    event.valid?.should be_false # need this for the next assertions to work
+    event.errors[:name].should include("can't be blank")
+    event.errors[:location].should include("can't be blank")
+    event.errors[:start_time].should include("can't be blank")
   end
 end

@@ -25,11 +25,21 @@ h1 {
 	line-height: 150%;
 }
 
+h2 {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	font-size: x-large;
+	line-height: 120%;
+}
+
 p {
 	line-height: 1.7em;
 	margin-bottom: 20px;
 }
 
+ul {
+	margin-left: 30px;
+}
 #nav_menu li {
 	float: right;
 	display: inline;

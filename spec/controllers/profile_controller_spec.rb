@@ -4,6 +4,7 @@ describe ProfileController do
 
   describe "GET 'show'" do
     it "should be successful" do
+      sign_in Factory(:pam)
       get 'show'
       response.should be_success
     end

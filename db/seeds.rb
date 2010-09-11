@@ -17,6 +17,7 @@ pam = User.create(:email => 'pam@producer.com',
                   :password_confirmation => 'seekret!')
                   pam.save
                   
+                  
 sam = User.create(:email => 'sam@speaker.com', 
                   :password => 'seekret!', 
                   :password_confirmation => 'seekret!')
@@ -40,4 +41,4 @@ devcon = Event.create(:name => 'DevCon Northwest',
                       :start_time => Time.new + (60 * 60 * 24 * 30), # 30 days from now
                       :end_time => Time.new + (60 * 60 * 24 * 33), # 3 day event
                       :location => 'Seattle City Center')
-                      devcon.save
+                      devcon.producers << pam.create_producer(:is_owner => true)

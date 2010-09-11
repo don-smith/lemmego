@@ -1,5 +1,8 @@
 class Event < ActiveRecord::Base
   validates :name, :location, :start_time, :presence => true
+  has_many :event_users
+  has_many :producers, :through => :event_users, :source => :user
+  has_many :attendees, :through => :event_users, :source => :user
   
   def dates
     starts = start_time.strftime("%b %d")

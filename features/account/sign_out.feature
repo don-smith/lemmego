@@ -4,6 +4,6 @@ Feature: User signs out of their account
 	So I can move on to something else
 	
 	Scenario: Successful sign out
-		Given I am signed in as Sam
+		Given I am signed in as Pam
 		When I follow "Sign out"
 		Then I should see "Sign in"

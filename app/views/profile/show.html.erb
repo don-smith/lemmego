@@ -1,0 +1,12 @@
+<h1>Profile for <%= current_user.email %>
+
+<h2>Attending</h2>
+
+<h2>Speaking</h2>
+
+<h2>Producing</h2>
+<ul><% @events.each do |event| %>
+	<li><%= link_to event.name, event %></li>
+	<% end %>
+  <li><%= link_to "Create new event", new_event_path %></li>
+</ul>
