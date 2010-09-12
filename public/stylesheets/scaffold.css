@@ -40,8 +40,12 @@ p {
 ul {
 	margin-left: 30px;
 }
-#nav_menu li {
+
+#menu {
 	float: right;
+}
+
+#nav_menu li {
 	display: inline;
 	padding: 20px;
 }
