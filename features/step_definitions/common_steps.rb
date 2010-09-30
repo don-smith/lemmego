@@ -1,6 +1,6 @@
-Then /^(?:|I )should see ([^"]*)'s ([^"]*)$/ do |obj, prop|
-  o = Factory.build(obj.downcase.to_sym)
-  value = o.send(prop)
+Then /^(?:|I )should see ([^"]*)'s ([^"]*)$/ do |username, property|
+  user = user_from username
+  value = user.send(property)
   if response.respond_to? :should
     response.should contain(value)
   else

@@ -1,0 +1,8 @@
+<h1>Listing talks</h1>
+
+<p><%= link_to 'Suggest Session', new_event_talk_path %></p>
+
+<% @talks.each do |talk| %>
+    <h3><%= link_to talk.title, [talk] %></h3>
+<% end %>
+

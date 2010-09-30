@@ -1,5 +1,22 @@
+# == Schema Information
+# Schema version: 20100912222321
+#
+# Table name: events
+#
+#  id          :integer         not null, primary key
+#  name        :string(255)
+#  description :text
+#  start_time  :datetime
+#  end_time    :datetime
+#  location    :string(255)
+#  cost        :integer         default(0)
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+
 class Event < ActiveRecord::Base
   validates :name, :location, :start_time, :presence => true
+  has_many :talks
   has_many :event_users
   has_many :producers, :through => :event_users, :source => :user
   has_many :attendees, :through => :event_users, :source => :user

@@ -1,0 +1,6 @@
+<h1>Editing talk</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @talk %> |
+<%= link_to 'List of talks', event_talks_path(@talk.event.id) %>

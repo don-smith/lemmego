@@ -1,0 +1,8 @@
+<p id="notice"><%= notice %></p>
+
+<h3><%= @talk.title %></h3>
+<p><%= @talk.level %></p>
+<p><%= @talk.abstract %></p>
+
+<%= link_to 'Edit this talk', edit_talk_path(@talk) %> |
+<%= link_to 'List of talks', event_talks_path(@talk.event.id) %>

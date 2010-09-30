@@ -20,10 +20,8 @@ module NavigationHelpers
       profile_path
     when /the new event page/
       new_event_path
-    when /the event page/
-      event_path
-    when /the DevCon page/
-      event_path Factory(:devcon).id
+    when /^the (.*) event page$/i
+      event_path Event.find_by_name($1).id
       
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
