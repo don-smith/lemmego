@@ -16,14 +16,11 @@ describe "talks/index.html.erb" do
         :event_id => 1
       )
     ])
+    view.stub!(:new_event_talk_path).and_return {"/events/12/talks/new"}
   end
 
   it "renders a list of talks" do
-    pending "because I haven't decided what to do here yet"
-    render
-    rendered.should have_selector("tr>td", :content => "Title".to_s, :count => 2)
-    rendered.should have_selector("tr>td", :content => "MyText".to_s, :count => 2)
-    rendered.should have_selector("tr>td", :content => "Level".to_s, :count => 2)
-    rendered.should have_selector("tr>td", :content => 1.to_s, :count => 2)
+    render 
+    rendered.should have_selector("h3", :content => "Title".to_s, :count => 2)
   end
 end

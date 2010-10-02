@@ -1,10 +1,11 @@
 require 'spec_helper'
 
-describe "Sessions" do
-  describe "GET /event/:id/sessions" do
-    it "works! (now write some real specs)" do
-      pending "because I haven't decided what to do here yet"
-      get event_sessions_path
+describe "Talks" do
+
+  describe "GET /events/1/talks" do
+    it "shows all talks for an event" do
+      get event_talks_path Factory(:event)
     end
   end
+
 end

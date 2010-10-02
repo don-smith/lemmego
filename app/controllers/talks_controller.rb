@@ -4,8 +4,7 @@ class TalksController < ApplicationController
   # GET /talks
   # GET /talks.xml
   def index
-    @talks = Talk.all
-    @event = Event.find(params[:event_id])
+    @talks = Event.find(params[:event_id]).talks
 
     respond_to do |format|
       format.html # index.html.erb
@@ -47,7 +46,7 @@ class TalksController < ApplicationController
 
     respond_to do |format|
       if @talk.save
-        format.html { redirect_to([@event, @talk], :notice => 'Talk was successfully created.') }
+        format.html { redirect_to(@talk, :notice => 'Talk was successfully created.') }
         format.xml  { render :xml => @talk, :status => :created, :location => @talk }
       else
         format.html { render :action => "new" }

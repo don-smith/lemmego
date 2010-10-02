@@ -6,16 +6,14 @@ describe "talks/show.html.erb" do
       :title => "Title",
       :abstract => "MyText",
       :level => "Level",
-      :event_id => 1
+      :event => mock_model(Event, :id => 1)
     ))
   end
 
   it "renders attributes in <p>" do
-    pending "because I haven't decided what to do here yet"
     render
     rendered.should contain("Title".to_s)
     rendered.should contain("MyText".to_s)
     rendered.should contain("Level".to_s)
-    rendered.should contain(1.to_s)
   end
 end

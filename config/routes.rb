@@ -5,11 +5,12 @@ Lemmego::Application.routes.draw do
 
   devise_for :users
 
-  resources :talks
-
   resources :events do
     resources :talks
   end
+
+  resources :talks
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

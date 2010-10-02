@@ -1,0 +1,51 @@
+Lemmego is a platform that puts people in control of creating experiences where they can share ideas and enjoy each other's company. It requires everyone involved to be honest and involved.
+
+Freevent
+ - under 100 attendees
+ - focus on human connection and sharing ideas 
+ - discussions are lead by a speaker (interactivity varies)
+ - publisher drives environment, flow, activities, schedule, meals
+ - speaker suggests, develops and delivers talk
+ - attendees comment and vote on talks before, during and after
+ - publisher decides which talks are approved/confirmed
+ - no registration fee for attendees
+ - speakers speak for free and incur all of their own expenses
+ - publishers can partner with sponsors to pay for speakers, meals, socials
+   - but the site doesn't manage any of these transactions
+
+As a producer
+	I want to be able to create an event
+	I need to communicate
+		the dates
+		the location
+		the sponsors
+		the schedule
+		the event url
+		the activities
+		the meal situation
+		cutoff date for talk discussion
+	I want a dashboard so I can see
+		a list of suggested talks
+			sorted from most points to least
+		each talk should show
+			number of votes
+			title of the talk
+			speaker (if any)
+			level of the talk
+		when I click on a talk, I should go to the talk's page
+	I should be able to mark a talk as confirmed
+	I should be able to edit any talk or comment
+	I should be able to send an email to all participants
+	
+As an interested speaker
+	I should be able to suggest a talk
+		and communicate title, level and abstract
+	I should be able to edit my talk
+
+As an interested attendee
+	I should be able to see a list of suggested talks
+	I should be able to vote on a suggested talk with a comment
+	I should be able to comment on the event as a whole
+	I should be able to register for the event
+	
+	
